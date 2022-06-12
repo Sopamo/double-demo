@@ -6,13 +6,14 @@ return new class {
             1 => [
                 'id' => 5,
             ],
-            3 => [
-                'id' => 6,
+            4 => [
+                'id' => time(),
             ],
         ];
     }
 
     public function storeBlogEntry(\Illuminate\Http\Request $request) {
+        sleep(1);
         return response()->json([
             'id' => 3,
             $request->input('title'),

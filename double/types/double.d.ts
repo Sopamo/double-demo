@@ -1,24 +1,3 @@
-// BEGIN: components/Blog
-type ComponentsBlogMainType = {
-  state: { 
-    blogEntries: {
-      1: {
-      id: 5
-    }
-      3: {
-      id: 6
-    }
-    }
-  }
-  actions: { 
-    storeBlogEntry: (options?: Record<string, any>) => Promise<unknown>
-  }
-  isLoading: { 
-    storeBlogEntry?: boolean
-  }
-}
-// END: components/Blog
-
 // BEGIN: pages/Recipes
 type PagesRecipesMainType = {
   state: { 
@@ -38,9 +17,30 @@ type PagesRecipesMainType = {
 }
 // END: pages/Recipes
 
+// BEGIN: components/Blog
+type ComponentsBlogMainType = {
+  state: { 
+    blogEntries: {
+      1: {
+      id: 5
+    }
+      4: {
+      id: any
+    }
+    }
+  }
+  actions: { 
+    storeBlogEntry: (options?: Record<string, any>) => Promise<unknown>
+  }
+  isLoading: { 
+    storeBlogEntry?: boolean
+  }
+}
+// END: components/Blog
+
 
 
 type doubleTypes = {
-  'components/Blog': ComponentsBlogMainType
   'pages/Recipes': PagesRecipesMainType
+  'components/Blog': ComponentsBlogMainType
 }
