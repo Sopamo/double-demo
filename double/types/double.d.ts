@@ -23,9 +23,11 @@ type ComponentsBlogMainType = {
     blogEntries: {
       1: {
       id: 5
+      title: Why Pulp Fiction is such a good movie
     }
       4: {
-      id: any
+      id: 6
+      title: Should Shawshank Redemption really be the #1 IMDb movie?
     }
     }
   }
