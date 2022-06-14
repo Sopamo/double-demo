@@ -3,11 +3,11 @@
 return new class {
     public function getBlogEntries() {
         return [
-            1 => [
+            [
                 'id' => 5,
-                'title' => 'Why Pulp Fiction is such a good movie'
+                'title' => 'Why Pulp Fiction is such a good movie.'
             ],
-            4 => [
+            [
                 'id' => 6,
                 'title' => 'Should Shawshank Redemption really be the #1 IMDb movie?'
             ],
