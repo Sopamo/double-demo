@@ -16,6 +16,7 @@ return new class {
 
     public function storeBlogEntry(\Illuminate\Http\Request $request) {
         // This doesn't really persist anything, it's just for demonstration
+        sleep(1);
         return response()->json([
             'id' => 3,
             $request->input('title'),
