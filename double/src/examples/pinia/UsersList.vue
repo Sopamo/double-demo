@@ -1,10 +1,16 @@
 <template>
-    In this example we persist all data in a pinia store
+    <p>In this example we persist all data in a pinia store.</p>
     <ul>
         <li v-for="user in usersStore.users" :key="user.id">
-            {{ user.name }}
+            <template v-if="usersStore.showNames">
+                {{ user.name }}
+            </template>
+            <template v-else>
+                {{ user.id }}
+            </template>
         </li>
     </ul>
+    <button @click="usersStore.toggleShowNames">toggle show names</button> |
     <button @click="addUser">Call double action</button>
     <div v-if="usersStore.isLoading['addUser']">calling dummy action...</div>
 </template>
