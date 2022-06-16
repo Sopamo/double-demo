@@ -4,6 +4,7 @@ export const useUsersStore = defineDoublePiniaStore('examples/pinia/users', {
     state: () => {
         return {
             showNames: true,
+            query: null,
         }
     },
     actions: {
@@ -11,5 +12,14 @@ export const useUsersStore = defineDoublePiniaStore('examples/pinia/users', {
             // This action demonstrates how you can still use local state in the same store where you use remote state.
             this.showNames = !this.showNames
         }
-    }
+    },
+    getters: {
+        queryConfig(state) {
+            return {
+                getUsers: {
+                    query: state.query
+                }
+            }
+        },
+    },
 })

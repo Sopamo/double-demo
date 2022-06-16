@@ -51,23 +51,6 @@ type SimpleBlogMainType = {
 }
 // END: simple/Blog
 
-// BEGIN: examples/pinia/users
-type ExamplesPiniaUsersMainType = {
-  state: { 
-    users: {
-      id: number
-      name: string
-    }[]
-  }
-  actions: { 
-    addUser: (options?: Record<string, any>) => Promise<unknown>
-  }
-  isLoading: { 
-    addUser?: boolean
-  }
-}
-// END: examples/pinia/users
-
 // BEGIN: examples/simple/Blog
 type ExamplesSimpleBlogMainType = {
   state: { 
@@ -85,12 +68,26 @@ type ExamplesSimpleBlogMainType = {
 }
 // END: examples/simple/Blog
 
+// BEGIN: examples/pinia/users
+type ExamplesPiniaUsersMainType = {
+  state: { 
+    users: any
+  }
+  actions: { 
+    addUser: (options?: Record<string, any>) => Promise<unknown>
+  }
+  isLoading: { 
+    addUser?: boolean
+  }
+}
+// END: examples/pinia/users
+
 
 
 type doubleTypes = {
   'pages/Recipes': PagesRecipesMainType
   'components/Blog': ComponentsBlogMainType
   'simple/Blog': SimpleBlogMainType
-  'examples/pinia/users': ExamplesPiniaUsersMainType
   'examples/simple/Blog': ExamplesSimpleBlogMainType
+  'examples/pinia/users': ExamplesPiniaUsersMainType
 }

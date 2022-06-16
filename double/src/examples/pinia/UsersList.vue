@@ -1,5 +1,6 @@
 <template>
     <p>In this example we persist all data in a pinia store.</p>
+    <input v-model="usersStore.query" placeholder="Search query" />
     <ul>
         <li v-for="user in usersStore.users" :key="user.id">
             <template v-if="usersStore.showNames">
@@ -18,7 +19,7 @@
 <script setup lang="ts">
 import { useUsersStore } from './usersStore'
 const usersStore = await useUsersStore()
-const addUser  = () => {
+const addUser = () => {
     usersStore.addUser({
         name: 'Samuel L. Jackson'
     })
