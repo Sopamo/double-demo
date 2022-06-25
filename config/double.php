@@ -7,6 +7,6 @@ return [
 
     // The root of your vuejs frontend. Files in this folder have to be executable by php
     // By default this should be a folder called `double` next to your Laravel's `src` folder
-    'frontend_root' => base_path('double'), // <- Configuration for webpack
-    // 'frontend_root' => base_path('vite-project'), // <- Configuration for vite
+    'frontend_root' => base_path('double-webpack'), // <- Configuration for webpack
+    // 'frontend_root' => base_path('double-vite'), // <- Configuration for vite
 ];
