@@ -17,7 +17,7 @@ import { defineComponent } from 'vue'
 import { useDouble } from 'double-vue'
 export default defineComponent({
     async setup() {
-        const double = await useDouble('examples/simple/Blog')
+        const double = await useDouble('/src/examples/simple/Blog')
 
         const newBlogEntry = async () => {
             await double.storeBlogEntry({

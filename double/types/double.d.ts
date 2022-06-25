@@ -1,56 +1,3 @@
-// BEGIN: pages/Recipes
-type PagesRecipesMainType = {
-  state: { 
-    recipes: any
-    data: {
-      id: number
-    }
-  }
-  actions: { 
-    signup: (options?: Record<string, any>) => Promise<unknown>
-    login: (options?: Record<string, any>) => Promise<unknown>
-  }
-  isLoading: { 
-    signup?: boolean
-    login?: boolean
-  }
-}
-// END: pages/Recipes
-
-// BEGIN: components/Blog
-type ComponentsBlogMainType = {
-  state: { 
-    blogEntries: {
-      id: number
-      title: string
-    }[]
-  }
-  actions: { 
-    storeBlogEntry: (options?: Record<string, any>) => Promise<unknown>
-  }
-  isLoading: { 
-    storeBlogEntry?: boolean
-  }
-}
-// END: components/Blog
-
-// BEGIN: simple/Blog
-type SimpleBlogMainType = {
-  state: { 
-    blogEntries: {
-      id: number
-      title: string
-    }[]
-  }
-  actions: { 
-    storeBlogEntry: (options?: Record<string, any>) => Promise<unknown>
-  }
-  isLoading: { 
-    storeBlogEntry?: boolean
-  }
-}
-// END: simple/Blog
-
 // BEGIN: examples/simple/Blog
 type ExamplesSimpleBlogMainType = {
   state: { 
@@ -68,8 +15,8 @@ type ExamplesSimpleBlogMainType = {
 }
 // END: examples/simple/Blog
 
-// BEGIN: examples/pinia/users
-type ExamplesPiniaUsersMainType = {
+// BEGIN: /src/examples/pinia/users
+type SrcExamplesPiniaUsersMainType = {
   state: { 
     users: any
   }
@@ -80,14 +27,29 @@ type ExamplesPiniaUsersMainType = {
     addUser?: boolean
   }
 }
-// END: examples/pinia/users
+// END: /src/examples/pinia/users
+
+// BEGIN: /src/examples/simple/Blog
+type SrcExamplesSimpleBlogMainType = {
+  state: { 
+    blogEntries: {
+      id: number
+      title: string
+    }[]
+  }
+  actions: { 
+    storeBlogEntry: (options?: Record<string, any>) => Promise<unknown>
+  }
+  isLoading: { 
+    storeBlogEntry?: boolean
+  }
+}
+// END: /src/examples/simple/Blog
 
 
 
 type doubleTypes = {
-  'pages/Recipes': PagesRecipesMainType
-  'components/Blog': ComponentsBlogMainType
-  'simple/Blog': SimpleBlogMainType
   'examples/simple/Blog': ExamplesSimpleBlogMainType
-  'examples/pinia/users': ExamplesPiniaUsersMainType
+  '/src/examples/pinia/users': SrcExamplesPiniaUsersMainType
+  '/src/examples/simple/Blog': SrcExamplesSimpleBlogMainType
 }

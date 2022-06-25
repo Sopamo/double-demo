@@ -1,5 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
-const { doubleWebpackPlugin } = require('double-vue/server')
+const { doubleWebpackPlugin } = require('double-vue/bundler')
 const path = require("path")
 
 module.exports = defineConfig({

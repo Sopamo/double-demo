@@ -3,6 +3,8 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import { installDouble } from 'double-vue'
 
-installDouble('http://localhost/double', 'webpack')
+installDouble('http://localhost/api/double', 'webpack')
 
-createApp(App).use(createPinia()).mount('#app')
+createApp(App)
+    .use(createPinia())
+    .mount('#app')

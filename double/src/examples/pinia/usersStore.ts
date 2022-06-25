@@ -1,6 +1,6 @@
-import { defineDoublePiniaStore } from "double-vue";
+import { defineDoublePiniaStore } from "double-vue/pinia";
 
-export const useUsersStore = defineDoublePiniaStore('examples/pinia/users', {
+export const useUsersStore = defineDoublePiniaStore('/src/examples/pinia/users', {
     state: () => {
         return {
             showNames: true,
