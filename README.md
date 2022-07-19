@@ -22,7 +22,8 @@
 
     # Start the double project
     cd double-vite
-    npm run serve
+    npm install
+    npm run dev
 
 The double demo is now running. Open http://localhost:3000 in your Browser to try it.
 
