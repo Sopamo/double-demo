@@ -18,12 +18,16 @@
     ./setup.sh
 
     # Start the laravel project
-    docker-compose up -d
+    ./vendor/bin/sail up -d
 
     # Start the double project
     cd double-vite
     npm run serve
 
-The double demo is now running. Open http://localhost:8080 in your Browser to try it.
+The double demo is now running. Open http://localhost:3000 in your Browser to try it.
 
-For more info & documentation for double see [double-vue](https://github.com/Sopamo/double-vue).
+> **Note**
+> If you want to try the webpack integration, make sure to update the frontend_root configuration
+> in config/double.php accordingly.
+
+For more info & documentation on double see the [double-vue](https://github.com/Sopamo/double-vue) repository.

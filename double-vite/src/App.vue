@@ -1,6 +1,6 @@
 <template>
     <h1>Welcome to the double demo!</h1>
-    <p>To start using double, open the files double-vite/examples/simple/Blog.vue and double-vite/examples/simple/Blog.php</p>
+    <p>To start using double, open the files double-vite/src/examples/simple/Blog.vue and double-vite/src/examples/simple/Blog.php</p>
   <Suspense>
   <Blog />
   </Suspense>
