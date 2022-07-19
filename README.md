@@ -25,6 +25,6 @@
     npm install
     npm run dev
 
-The double demo is now running. Open http://localhost:8080 in your Browser to try it.
+The double demo is now running. Open http://localhost:3000 in your Browser to try it.
 
 For more info & documentation for double see [double-vue](https://github.com/Sopamo/double-vue).
